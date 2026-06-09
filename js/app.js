@@ -43,7 +43,7 @@ const dict = () => translations[state.lang];
 const dataset = () => content[state.lang];
 const textOf = key => dict()[key] || translations.th[key] || key;
 const param = name => new URLSearchParams(location.search).get(name);
-const searchQuery = () => param('q') || state.search || '';
+const searchQuery = () => param('q') || '';
 const categorySearchTargets = {
   th: ['เสริมดวง', 'เสริมทรัพย์', 'เสริมดวง', 'มหาเฮง', 'เสริมดวง', 'วัดอ่าวน้อย', 'ศาลหลักเมือง', 'วัดอ่าวน้อย', 'เสริมทรัพย์', 'พระอุปคุต'],
   zh: ['转运套装', '招财套装', '转运套装', '好运大发套装', '转运套装', '奥诺寺', '巴蜀府城市柱神庙', '奥诺寺', '招财套装', '优婆掬尊者'],
