@@ -361,10 +361,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (page === 'home') {
     renderCategories();
     const query = searchQuery();
-    renderPlaces('places', query, 3);
+    renderPlaces('places', query, 4);
     initSearch(value => {
       setSearch(value);
-      renderPlaces('places', value, 3);
+      renderPlaces('places', value, 4);
     });
   }
 
